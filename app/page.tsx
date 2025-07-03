@@ -172,7 +172,7 @@ export default function BluggennLanding() {
               alt="Bluggenn"
               width={120}
               height={120}
-              className="h-12 w-auto"
+              className="h-20 w-auto"
             />
           </div>
 
@@ -857,7 +857,7 @@ export default function BluggennLanding() {
                 alt="Bluggenn"
                 width={120}
                 height={120}
-                className="h-12 w-auto"
+                className="h-20 w-auto"
               />
               <p className="text-gray-400 text-sm leading-relaxed">
                 Power Smarter. Live Better.
