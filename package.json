@@ -1,6 +1,7 @@
 {
-  "name": "bluggenn-landing",
+  "name": "bluggenn",
   "version": "0.1.0",
+  "author":"Soft Masters",
   "private": true,
   "scripts": {
     "build": "next build",
