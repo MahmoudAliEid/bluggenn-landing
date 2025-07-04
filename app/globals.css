@@ -228,3 +228,75 @@ html[dir="rtl"] .font-bold {
 html[dir="rtl"] .font-semibold {
   font-weight: 500;
 }
+
+/* Custom spacing utilities */
+.hero-spacing {
+  padding-top: 6rem; /* 96px */
+}
+
+@media (min-width: 768px) {
+  .hero-spacing {
+    padding-top: 8rem; /* 128px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-spacing {
+    padding-top: 9rem; /* 144px */
+  }
+}
+
+/* Header height utilities */
+.header-height {
+  height: 4.5rem; /* 72px */
+}
+
+@media (min-width: 768px) {
+  .header-height {
+    height: 5rem; /* 80px */
+  }
+}
+
+/* Mobile menu spacing */
+.mobile-menu-spacing {
+  padding-top: 200px; /* Account for mobile menu when open */
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-spacing {
+    padding-top: 8rem; /* Same as hero-spacing for desktop */
+  }
+}
+
+/* Smooth transitions for spacing changes */
+.hero-spacing,
+.mobile-menu-spacing {
+  transition: padding-top 0.3s ease-in-out;
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 640px) {
+  .hero-spacing {
+    padding-top: 5rem; /* 80px for small screens */
+  }
+  
+  .header-height {
+    height: 4rem; /* 64px for small screens */
+  }
+}
+
+/* Smooth scrolling for navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better scroll padding for fixed header */
+html {
+  scroll-padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 6rem;
+  }
+}

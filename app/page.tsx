@@ -210,9 +210,9 @@ export default function BluggennLanding() {
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="fixed top-0 w-full bg-black/80 backdrop-blur-md border-b border-gray-800 z-50"
+        className="fixed top-0 w-full bg-black/80 backdrop-blur-md border-b border-gray-800 z-50 header-height"
       >
-        <div className="container mx-auto px-4 py-1 flex items-center justify-between">
+        <div className="container mx-auto px-4 h-full flex items-center justify-between">
           <div
             className={`flex items-center ${
               isArabic ? "space-x-reverse space-x-1" : "space-x-1"
@@ -302,24 +302,28 @@ export default function BluggennLanding() {
                 <Link
                   href="#home"
                   className="text-gray-300 hover:text-[#22c55e] transition-colors rtl-text-right"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {t("nav.home")}
                 </Link>
                 <Link
                   href="#about"
                   className="text-gray-300 hover:text-[#22c55e] transition-colors rtl-text-right"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {t("nav.about")}
                 </Link>
                 <Link
                   href="#products"
                   className="text-gray-300 hover:text-[#22c55e] transition-colors rtl-text-right"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {t("nav.products")}
                 </Link>
                 <Link
                   href="#contact"
                   className="text-gray-300 hover:text-[#22c55e] transition-colors rtl-text-right"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {t("nav.contact")}
                 </Link>
@@ -332,7 +336,9 @@ export default function BluggennLanding() {
       {/* Hero Section */}
       <section
         id="home"
-        className="pt-20 min-h-screen flex items-center relative overflow-hidden"
+        className={`${
+          mobileMenuOpen ? "mobile-menu-spacing" : "hero-spacing"
+        } min-h-screen space-y-10 flex items-center pb-6 relative overflow-hidden`}
       >
         <Spotlight
           className={`-top-40 ${
@@ -356,24 +362,24 @@ export default function BluggennLanding() {
               initial={{ opacity: 0, x: isArabic ? 50 : -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-8"
+              className="space-y-6 lg:space-y-8"
             >
-              <div className="space-y-4">
+              <div className="space-y-8">
                 <motion.h1
-                  className={`text-4xl md:text-7xl font-bold leading-tight ${
+                  className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight ${
                     isArabic ? "text-right" : "text-left"
                   }`}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                 >
-                  <span className="bg-gradient-to-r from-[#22c55e] to-[#16a34a] bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#22c55e] to-[#16a34a] bg-clip-text text-transparent pb-4 block">
                     {t("hero.title")}
                   </span>
-                  <br />
-                  {t("hero.subtitle")}
-                  <br />
-                  <span className="text-2xl md:text-4xl font-bold leading-tight">
+                  <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 text-white">
+                    {t("hero.subtitle")}
+                  </span>
+                  <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mt-2 text-gray-300">
                     {t("hero.subtitleEnd")}
                   </span>
                 </motion.h1>
@@ -428,7 +434,7 @@ export default function BluggennLanding() {
               initial={{ opacity: 0, x: isArabic ? -50 : 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
+              className="relative pb-4"
             >
               <div className="relative w-full h-96 rounded-2xl overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-[#22c55e]/20 to-transparent z-10" />
