@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +12,97 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* RTL Support */
+html[dir="rtl"] {
+  font-family: 'Cairo', 'Noto Sans Arabic', 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+  font-feature-settings: 'kern' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .rtl-space-reverse {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .rtl-text-right {
+  text-align: right;
+}
+
+html[dir="ltr"] .rtl-text-right {
+  text-align: left;
+}
+
+/* Enhanced RTL Layout Support */
+html[dir="rtl"] .rtl-margin-reverse {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .rtl-margin-reverse {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+html[dir="rtl"] .rtl-padding-reverse {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+html[dir="ltr"] .rtl-padding-reverse {
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+/* RTL Navigation */
+html[dir="rtl"] .navigation {
+  direction: rtl;
+}
+
+html[dir="rtl"] .navigation ul {
+  flex-direction: row-reverse;
+}
+
+/* RTL Cards and Images */
+html[dir="rtl"] .card-image {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .icon-arrow {
+  transform: rotate(180deg);
+}
+
+/* RTL Grid Layout */
+html[dir="rtl"] .grid-rtl {
+  grid-template-columns: 1fr;
+  text-align: right;
+}
+
+html[dir="ltr"] .grid-rtl {
+  text-align: left;
+}
+
+/* Custom scrollbar for RTL */
+html[dir="rtl"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+html[dir="rtl"] ::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+html[dir="rtl"] ::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 4px;
+}
+
+html[dir="rtl"] ::-webkit-scrollbar-thumb:hover {
+  background: #16a34a;
 }
 
 @layer base {
@@ -91,4 +184,47 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Arabic Typography Enhancements */
+html[dir="rtl"] * {
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+}
+
+html[dir="rtl"] h1, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] h3, 
+html[dir="rtl"] h4, 
+html[dir="rtl"] h5, 
+html[dir="rtl"] h6 {
+  font-family: 'Cairo', 'Noto Sans Arabic', sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+html[dir="rtl"] .text-4xl,
+html[dir="rtl"] .text-5xl,
+html[dir="rtl"] .text-6xl,
+html[dir="rtl"] .text-7xl {
+  font-family: 'Cairo', 'Noto Sans Arabic', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+html[dir="rtl"] p,
+html[dir="rtl"] .text-lg,
+html[dir="rtl"] .text-xl {
+  font-family: 'Noto Sans Arabic', 'Cairo', sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+html[dir="rtl"] .font-bold {
+  font-weight: 600;
+}
+
+html[dir="rtl"] .font-semibold {
+  font-weight: 500;
 }

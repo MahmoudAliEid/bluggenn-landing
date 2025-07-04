@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bluggenn",
+    "subtitle": "your trusted",
+    "subtitleEnd": "power partner",
+    "description": "Bluggenn creates smart, simple, and reliable mobile accessories with uncompromising quality and elegant design.",
+    "exploreProducts": "Explore Products",
+    "learnMore": "Learn More"
+  },
+  "experience": {
+    "title": "Experience the",
+    "titleHighlight": "Difference"
+  },
+  "movingCards": {
+    "items": [
+      {
+        "quote": "Engineering Excellence",
+        "name": "Premium Quality",
+        "title": "Built to Last"
+      },
+      {
+        "quote": "Smart Innovation",
+        "name": "Thoughtful Design",
+        "title": "User-Centered"
+      },
+      {
+        "quote": "Reliable Performance",
+        "name": "Consistent Power",
+        "title": "Always Ready"
+      },
+      {
+        "quote": "Elegant Aesthetics",
+        "name": "Stylish Design",
+        "title": "Premium Look"
+      },
+      {
+        "quote": "Safety First",
+        "name": "Protected Charging",
+        "title": "Peace of Mind"
+      }
+    ]
+  },
+  "about": {
+    "title": "About Bluggenn",
+    "description": "Founded by passionate engineers with a love for smart, simple, and reliable designs. We specialize in mobile accessories crafted with attention to detail, style, and uncompromising quality.",
+    "mission": {
+      "title": "🎯 Our Mission",
+      "description": "To create smarter, safer, and more stylish products—without the unnecessary complexity. We believe technology should enhance your life, not complicate it.",
+      "tags": ["Smart Design", "Safety First", "Style Matters"]
+    },
+    "vision": {
+      "title": "🌍 Our Vision",
+      "description": "Transform from a local innovation to a global name in tech accessories, with simplicity and trust at the heart of everything we do.",
+      "tags": ["Global Reach", "Local Innovation", "Trust & Quality"]
+    },
+    "whyChoose": {
+      "title": "⚡ Why Choose",
+      "titleHighlight": "Bluggenn?",
+      "features": [
+        {
+          "icon": "🎨",
+          "title": "Thoughtful Design",
+          "description": "Designed for real-life convenience with attention to every detail"
+        },
+        {
+          "icon": "🛡️",
+          "title": "Safety & Performance",
+          "description": "Exceptional safety standards with uncompromising performance"
+        },
+        {
+          "icon": "✨",
+          "title": "Elegant Aesthetics",
+          "description": "Sleek aesthetics with a solid feel that complements your style"
+        },
+        {
+          "icon": "🏗️",
+          "title": "Built to Last",
+          "description": "Premium materials and construction for long-lasting durability"
+        }
+      ]
+    }
+  },
+  "products": {
+    "title": "Our Products"
+  },
+  "metadata": {
+    "title": "Bluggenn",
+    "description": "Bluggenn is a Saudi tech brand founded by passionate engineers with a love for smart, simple, and reliable designs. We specialize in mobile accessories—such as power banks, chargers, and cables—meticulously crafted with attention to detail, style, and uncompromising quality."
+  }
+}
